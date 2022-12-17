@@ -6,8 +6,8 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 
-var port = Environment.GetEnvironmentVariable("PORT")??"8085";
-
+//var port = Environment.GetEnvironmentVariable("PORT")??"8085";
+var port = Environment.GetEnvironmentVariable("PORT")??"80";
 app.MapGet("/", () =>
 {
     app.Logger.LogInformation("Initial Home Get now");
