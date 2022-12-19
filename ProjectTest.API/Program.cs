@@ -11,13 +11,13 @@ var port = Environment.GetEnvironmentVariable("PORT")??"80";
 app.MapGet("/", () =>
 {
     app.Logger.LogInformation("Initial Home Get now");
-    return "GET - Net 6 Running ... 13122022-v1.0.0 CI/CD in KUBERNETES  Alexander Villalobos v1.0.0 AFORO255";
+    return "GET - Net 6 Running ... 19122022-v1.0.0 CI/CD in KUBERNETES  Alexander Villalobos Yarihuaman v1.0.0 AFORO255";
 });
 
 app.MapPost("/", () =>
 {
     app.Logger.LogInformation("Initial Home Post");
-    return "POST - Net 6 Running ... 13122022-v1.0.0 CI/CD in KUBERNETES Alexander Villalobos v1.0.0 AFORO255";
+    return "POST - Net 6 Running ... 19122022-v1.0.0 CI/CD in KUBERNETES Alexander Villalobos Yarihuaman v1.0.0 AFORO255";
 });
 
 app.Run($"http://0.0.0.0:{port}");
